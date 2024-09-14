@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* o justify content space-between é pra ficar um longe do outro */
+    padding-inline: 1.25rem;
+    padding-block: 1.5rem;
+    /* é a mesma coisa do padding, não muda nada */
+    margin-inline: auto;
+    /* margem tanto da esquerda quanto da direita */
+    max-width: 1100px;
+}
+
+
+.headerLogo {
+    font-family: "New Amsterdam", sans-serif;
+    color: #C89B3C;
+    font-size: 2.55rem;
+    /* Vê como fica melhor na tela inteira do site */
+    font-weight: 100;
+}
+
+
+.navUl {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    /* Pra ficar um do lado do outro, só que ficou colado, então pra poder da um espaçamento, vou usar o gap */
+    gap: 2rem;
+    list-style: none;
+    /* Aqui,é pra estilizar os botoões da listinha. Têm de váriis tipos Pra tirar, é só colocar o "none" que sai as bolinhas */
+}
+
+
+.navA {
+    font-family: "Inter", sans-serif;
+    color: inherit;
+    /* O inherit é herdar. Pra não ter que ficar escrevedo a cor toda hora, eu vou faze ela herdar a cor do "pai". Normalmete, é a categoria em que ele está dentro, mas como não coloqui cor nessa categoria, ele vai procurar em outra, até achar. Portanto, a cor do body no caso. */
+    text-decoration: none;
+    /* pra tirar aquela linha que fica embaixo da parada */
+}
+

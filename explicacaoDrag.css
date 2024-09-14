@@ -1,0 +1,80 @@
+.Cards {
+    max-width: 1000px ;
+    margin-inline: auto;
+}
+
+.CardGeral {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(8, 8, 27);
+    padding: 4rem 2rem 2rem 2rem;
+    border-radius: 12px;
+    
+}
+
+
+.cardUpText{
+    color: #0397AB;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.CardText {
+    text-align: center;
+}
+.cardTitle {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2rem;
+    color: #C89B3C;
+}
+
+.cardDescricao{
+    max-width: 60ch;
+    font-size: 1.4rem;
+    margin-inline: auto;
+    font-family: "Inter", sans-serif;
+    color: rgb(243, 243, 243, 0.6);
+    font-weight: 200;
+    
+}
+
+.CardMenores {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    /* são os espaços entre os cads, sendo o column, o espaço de cima e o row o espaço de baixo */
+    margin-top: 6rem;
+
+}
+
+.CardMenor {
+    background-color: rgb(45, 45, 95, 0.2);
+    padding: 6rem 2rem 2rem 2rem;
+    /* vai mexendo no tamanho do inicio do padding, que é o top, pra poder cabera imagem e el não ficar em cima do texto */
+    border-radius: 12px;
+    flex: 1;
+    min-width: 400px;
+    /* É o expaçamento maximo que ele vai alcançar pra mudar de linha o card */
+}
+
+.CardMenorImg {
+    width: 5rem;
+    position: absolute;
+    top: -3rem;
+    left: 2rem;
+}
+
+.CardMenorTitle{
+    color: #f3f3f3;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.CardMenorDescricao{
+    color: rgb(243, 243, 243, 0.6);
+    font-weight: 50;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,36 @@
+ *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    background-color: #0A1428;
+    color: #f3f3f3;
+    /* procura a fonte que parece com a do site do lol e cola aqui e nao esquece de colar tambe la o html */
+}
+
+ img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    /* serve pra imagem se adaptar no site e não ficar uma coisa horrosa por conta do */
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+} 
+

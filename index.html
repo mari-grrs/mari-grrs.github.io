@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="pagUm.css">
+<link rel="stylesheet" href="explicacaoDrag.css">
+<link rel="stylesheet" href="info2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+
+<body>
+
+   <header class="header">
+        <span class="headerLogo">League Of Legends</span>
+        <nav class="headerNav" >
+            <ul class="navUl">
+                <li class="navLi"><a class="navA" href="">Sobre Nós</a> </li>
+                <li class="navLi"><a class="navA" href="">Fale Conosco</a> </li>
+                <li class="navLi"><a class="navA"href="">Discord</a> </li>
+            </ul>
+        </nav>
+        <button class="BotaoMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="PagUmMenu">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+        </button>
+   </header>
+
+<div class="bg">
+<section class="pagUm">
+    <div class="pagUmEsquerda" >
+        <h1 class="pagUmTitle" >Bem-vindo ao </br> <span class="LogoIicio">League of Legends</span>
+        </h1>
+        <h2 class="pagUmDescricao"> League of Legends é um MOBA online multiplayer 5v5, cujo o objetivo é derrubar o nexus inimigo.
+            Existem 3 rotas que podem ser utilizadas para chegar até o objetivo: top, mid e bot. Dentro dessas 3 rotas, existem ainda 3 torres que precisam ser destruídas para abrir caminho e chegar até o nexus.
+        </h2>
+        <button class="ButtonComoJogar">Como Jogar</button>
+    </div>
+    <div class="pagUmDireita"> <img class="PagUmImg" src="c3cb35f7a26ad687b54c379f433f5509c757d951-1232x1644.webp" alt=""> </div>
+    <!-- Vai ficar a parte textual e a parte da imagem dividida, por isso em duas div separadas -->
+</section>
+</div>
+<!-- O section serve para uma seção gnérica de u doc HTML que não possui um elemento semântic específico-->
+
+
+<section>
+    <div class="line"></div>
+<div class="MapaGeral">
+    <div class="InfoEsquerda"> <img class="mapalol" src="mapalol.webp" alt=""> </div>
+    <div class="InfoDireita"> 
+        <div class="sectionTitle">MAPA GERAL</div>
+        <div class="sectionDescricao">O mapa possui 3 rotas: Cada rota possui 3 torres que precisam ser derrubadas para chegar até o nexus, </br>
+             sendo a qual te ataca caso você entre na área de alcance sem um minion na frente. </br>
+               Os minions são muito importantes: matando o minion inimigo,você recebe uma quantidade de ouro na </br>
+               qual você pode utilizar para comprar itens na base. Esses itens te ajudam a ficar mais fortes durante o jogo, </br> dando a você vantagens em cima do inimigo.</div>
+    </div>
+</div>
+</section>
+
+<section class="Cards" >
+    <div class="CardGeral">
+        <div class="CardText">
+            <div class="cardUpText">objetivos</div>
+        <div class="cardTitle">Dragões Elementais</div>
+        <div class="cardDescricao">Existem tipos diferentes de drag no jogo e cada um te oferece um buff de acordo com o elemento do objetivo. Além disso, todos eles são divididos em 3 fases: efeito básico (é implementado a cada jogador do time assim que conquista o objetivo), terreno (o mapa do jogo muda de acorod com o elemento do dragão adquirido) e alma do drag (alto buff que concede a possibilidade de mudar o rumo do jogo).</div>
+    </div>
+
+        <div class="CardMenores">
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão das Nuvens</div>
+                 <div class="CardMenorDescricao">Entrega como efeito básico o aumento da velocidade de movimento fora de combate e resistência a lentidão.<br>
+                    No terreno, aleatoriamente surge "correntes de vento" que dão a aceleração de movimento para o campeão que passar por ela.<br>
+                    A alma desse drag oferece a diminuição da recarga de habilidades base, caso o jogador consiga acertar o inimigo.</div>
+            </div>
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão das Montanhas</div>
+                 <div class="CardMenorDescricao"> O efeito básico oferece ao time + 6% de armadura e resistência mágica.<br> 
+                    O terreno sofre mudanças, aparecendo paredes de pedra do chão, de acordo com o deslocamento do drag pelo mapa.<br>
+                   A alma do dragão da montanha oferece ao time um escudo que pode ser destruído pelo inimigo (o escudo volta depois de um momento fora de combate). Esse escudo escala de acordo com o seu dano de ataque, habilidade e vida adicional.</div>
+            </div>
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão Infernal</div>
+                 <div class="CardMenorDescricao">Ofere como efeito básico +4% de dano de ataque poder de habilidade.</br>
+                    O terreno abre locais que antes possuia paredes e tira alguns arbustos que servia como esconderijo.<br>
+                A alma do drag de fogo oferece um dano explosivo na área que foi acertada o poder de habilidade ou ataque básico a cada 5 segundos.</div>
+            </div>
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão do Oceano</div>
+                 <div class="CardMenorDescricao">Como efeito base oferece ao time uma recuperação de uma parte da vida (2,5%) a cada 5 segundo e pode ser acumulado caso pegue outro drag do Oceano.<br>
+                    No terreno, vão surgir novos arbustos e fruta mel.<br>
+                    Já a alma do dragão do Oceano, oferec regenração da vida a cada dano que o player causar no inimigo. Isso ocorre por 3 segundos.</div>
+            </div>
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão Ancião</div>
+                 <div class="CardMenorDescricao">Diferente dos outos drags, ele só aparece quando alguma equipe finaliza 4 dragões e entrega apenas um buff, mas que altamente poderoso.<BR>
+                    O inimigo que estiver com pouca vida e for acertado pelo player, será executado automaticamente. Esse efeito dura 1min e 30 segundos.</div>
+            </div>
+            <div class="CardMenor">
+                <img  class="CardMenorImg" src="" alt="">
+                <!-- O Ícone de cada dragão elementar -->
+                 <div class="CardMenorTitle">Dragão Hextec</div>
+                 <div class="CardMenorDescricao">O efeito básico oferece um aumento na aceleração de habilidade e 5% de velocidade de ataque ao time.<br>
+                    O terreno sofre modificações, abrindo portais pelo mapa, que permite a locomoção bem mais rápida do jogador.<br>
+                    A alma do drag Hextec concede lentidão no inimigo quando acertado pelo player com ataque base ou habilidades. Além disso, concede também relâmpagos no ataque do player.</div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="Info2">
+    <div class="Info2Geral">
+        <div class="Info2Esquerda">
+            <img class="bordaImgRotas" src="toppp.jpg" alt="">
+        </div>
+        <div class="Info2Direita">
+            <div class="TITULOSROTAS">
+            <div class="sectionUpText">
+                lane
+            </div>
+            <div class="sectionTitle">
+                TOP
+            </div>
+            </div>
+            <div class="sectionDescricao"> É a lane que fica no topo do mapa. Normalmente, é utilizado personagens tanques, com dano AD (AD: sigla utilizada para apreviação da palavra "Attack Damage", que em português significa dano de ataque. Mais adiante explicarei melhor). Os personagens aqui utilizados, possuem um poder de alto dano em torres e de tancar (significa "absorver") o dano inimigo.</div>
+        </div>
+    </div>
+    <div class="Info2Geral">
+        <div class="Info2Esquerda Info2Img">
+            <img class="bordaImgRotas" src="midd.png" alt="">
+        </div>
+        <div class="Info2Direita">
+            <div class="Info2TextosGerais">
+            <div class="sectionUpText">
+                lane
+            </div>
+            <div class="sectionTitle">
+                MID
+            </div>
+            <div class="sectionDescricao">É o caminho mais curto para chegar até o nexus inimigo e fica no meio do mapa. É uma lane mais versátil, podendo ver com mais frequência personagens tanto com dano AP ("Ability Power" ou em português: Poder de Habilidade) quanto AD. O jogador tem que ter a sagacidade de saber o momento em que vai ajudar a TOP lane ou a BOT lane, sem prejudicar sua própria lane.</div>
+            </div>
+
+</section>
+
+        <section class="Info2" >
+            <div class="Info2Geral">
+                <div class="Info2Esquerda">
+                    <img class="bordaImgRotas" src="bot.jpg" alt="">
+                </div>
+                <div class="Info2Direita">
+                    <div class="TITULOSROTAS">
+                    <div class="sectionUpText">
+                        lane
+                    </div>
+                    <div class="sectionTitle">
+                        BOT
+                    </div>
+                    </div>
+                    <div class="sectionDescricao">
+                        Uma lane que é jogada em dois: atirador e suporte. </br>
+                        O atirador, em início de jogo, é bem fraco e por isso precisa de um suporte para ajudá-lo. </br>
+                        O suporte, é muito importante para todos os jogadores, pois ele possui ou o poder de curar os campeões aliados ou de absorver dano do time inimigo e sair vivo.
+                    </div>
+                </div>
+            </div>
+            <div class="Info2Geral">
+                <div class="Info2Esquerda Info2Img">
+                    <img class="jungleIcon bordaImgRotas" src="jungle.jpg" alt="">
+                </div>
+                <div class="Info2Direita">
+                    <div class="Info2TextosGerais">
+                    <div class="sectionUpText">
+                        lane
+                    </div>
+                    <div class="sectionTitle">
+                        JUNGLE
+                    </div>
+                    <div class="sectionDescricao">De todas, é a lane mais diversificada. </br>
+                        São quatro selvas no total: duas no lado do inimigo e duas no lado do time. Em cada um desse4s lados, exitem os bichos nos quais o jungle precisa fazr pra poder adquirir moedas para comprar itens. </br>
+                        Além disso, exite a smite: utilizada para finalizar monstros da selva e é super importante pra conseguir adquirir os objetivos (tanto roubando, quanto segurando para não ser roubado)
+                    </div>
+        </section>
+</body>
+
+
+</html>

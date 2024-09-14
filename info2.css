@@ -1,0 +1,27 @@
+.Info2 {
+    max-width: 1000px;
+    margin-inline: auto;
+    
+}
+
+.Info2Geral {
+    display: flex;
+    gap: -5rem;
+    padding-top: 5rem;
+}
+
+.Info2TextosGerais{
+    text-align: center;
+}
+
+.Info2Esquerda {
+    flex: 1;
+}
+.Info2Direita {
+    flex: 1;
+}
+
+.Info2Img {
+    order: 1;
+   padding-top: 4rem;
+}

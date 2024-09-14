@@ -1,0 +1,167 @@
+.bg {
+    background: linear-gradient(rgb(91, 107, 255, 0.9) black);
+}
+
+.pagUm {
+    display: flex;
+    padding-inline: 1.25rem;
+    padding-top: 6rem;
+    /* espaço entre o header e o inicio da pagina um */
+    overflow: hidden;
+    /* é pra esconder a barra de rolagem caso crie por algum problema */
+    margin-inline: auto;
+    /* margem tanto da esquerda quanto da direita */
+    max-width: 1000px;
+}
+
+
+
+.pagUmEsquerda {
+    flex: 1;
+}
+
+.pagUmDireita {
+
+    flex: 1;
+    /* como elas ficam por padrão uma embaixo da outra, eu vou colocar um flex na section total */
+    /* o Height é altura e o width é largura. Vai arrumando com o site aberto na tela totl pra ver como fica. */
+}
+
+/* Sobre o flex: eu vou utilizá-lo sepre dentro dos filhos do que eu utlizei o display flex. Nesse caso, o display flex ta na pagUm, então o flex eu vou usar na Pag Um Direita e pag Um Esquerda. */
+
+
+
+/* PAGINA UM ESQUERDA */
+
+.pagUmTitle {
+    font-family: "New Amsterdam", sans-serif;
+    color: #d3d2d2;
+    font-size: 4rem;
+    line-height: 3rem;
+    /* o espaçamentovertical entre as linhas. */
+    font-weight: 100;
+    letter-spacing: -0.07rem;
+}
+
+.LogoIicio {
+    color: #C89B3C;
+}
+
+
+.pagUmDescricao {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    /* tamanho total da fonte */
+    opacity: 0.7;
+    font-weight: 10;
+    /* grossura das letras */
+    line-height: calc(1em + 0.5rem);
+    margin-block: 2rem;
+    max-width: 100ch;
+    /* o ch é quantos caracteres vc quer que fique a mesma linha */
+}
+
+.ButtonComoJogar{
+    font-size: 1rem;
+    background: linear-gradient(to right, #C89B3C, #785A28 );
+    padding: 0.5em 2em;
+    border-radius: 6px;
+    /* pra arredondar as bordas */
+
+    /* a forma de cotagem "em" é relativo a font size, por isso utlizar pra ficar harmônico com a fonte */
+}
+
+/* PAGINA UM DIREITA */
+
+.PagUmImg {
+    transform: rotate(none);
+    max-width: 480px;
+    /* significa que quando a img chegar a essa largura, ela não vai cescer mais, fazedo o site ficar todo torto. */
+
+}
+
+
+@media (width < 1024px) {
+    .pagUm {
+        flex-direction: column;
+    }
+    .pagUmTitle {
+        max-width: 20ch;
+    }
+    .PagUmImg {
+        width: 100%;
+        max-width: 60ch;
+        margin-inline: auto;
+    }
+}
+
+
+/* ### SEÇÃO DE QUADRADOS: USAR PARA EXPLICAR SOBRE O MAPA #### */
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(243, 243, 243, 0.2);
+    margin-block: 4rem;
+}
+
+.MapaGeral {
+    display: flex;
+    padding-left: 10rem;
+    gap: 1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.InfoEsquerda {
+    flex: 1;
+}
+
+.mapalol {
+    border-radius: 50px;
+}
+
+.InfoDireita {
+    flex: 1;
+    align-items: center;
+    padding-left: -50rem;
+    
+}
+
+.sectionTitle {
+    font-family: "New Amsterdam", sans-serif;
+    color: #C89B3C;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.sectionDescricao {
+    align-items: center;
+    font-size: 1.2rem;
+    color: rgb(243, 243, 243, 0.6);
+    line-height: calc(1em + 0.7rem);
+    margin-block: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    /* tamanho total da fonte */
+    font-weight: 10;
+    /* grossura das letras */
+    line-height: calc(1em + 0.5rem);
+    margin-block: 2rem;
+    max-width: 100ch;
+    /* o ch é quantos caracteres vc quer que fique a mesma linha */
+}
+
+.TITULOSROTAS {
+    text-align: center;
+}
+
+.jungleIcon {
+    width: 350px;
+    padding-left: 30px;
+}
+
+.bordaImgRotas {
+    border-radius: 20px;
+}
